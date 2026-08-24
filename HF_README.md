@@ -13,4 +13,5 @@ short_description: Jeremy Panasuk packet for Palantir American Tech Fellowship.
 
 Fall 2026. Foundry + AIP. American worker.
 
-Also: [jpanasuk-netizen.github.io/for-american-tech](https://jpanasuk-netizen.github.io/for-american-tech/)
+Also: [jpanasuk-netizen.github.io/for-american-tech](https://jpanasuk-netizen.github.io/for-american-tech/)  
+Floor playbook and loyalty talk are in the App (`playbook.html`, `loyalty.html`).

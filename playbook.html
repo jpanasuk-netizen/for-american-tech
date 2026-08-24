@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeremy Panasuk · Playbook · American Tech Fellowship</title>
+  <meta name="description" content="Role-custom IPS playbook for American Tech Fellowship · Palantir × Ontologize: documentation standards, performance, customer coaching." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Serif+4:ital,wght@0,400;1,400;1,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #e6dfd0; --ink: #152033; --accent: #1e3a5f;
+      --gold: #b8860b; --muted: #5c6b7a; --paper: #f4efe4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: var(--bg); color: var(--ink); font-family: "Source Sans 3", sans-serif; }
+    a { color: var(--accent); }
+    .wrap { width: min(1100px, calc(100% - 40px)); margin: 0 auto; }
+    header.nav { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 2px solid var(--accent); padding: 14px 0; }
+    header.nav .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .brand { color: var(--ink); text-decoration: none; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    nav a { margin-left: 16px; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; text-decoration: none; color: var(--muted); }
+    .kicker { letter-spacing: 0.22em; text-transform: uppercase; font-size: 12px; color: var(--gold); margin-bottom: 10px; }
+    h1 { font-family: "Oswald", sans-serif; font-size: clamp(42px, 7vw, 84px); line-height: 0.9; margin: 8px 0 16px; }
+    h2 { font-family: "Oswald", sans-serif; font-size: clamp(26px, 4vw, 40px); margin: 0 0 12px; }
+    h3 { margin: 8px 0 8px; }
+    .tag { font-style: italic; font-size: clamp(18px, 2.2vw, 26px); line-height: 1.3; max-width: 36ch; }
+    section { padding: 56px 0; }
+    .lead { max-width: 68ch; line-height: 1.55; color: var(--muted); }
+    .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
+    .pillar, .ticket { background: var(--paper); border: 1px solid var(--accent); padding: 22px; }
+    .tickets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 22px; }
+    .ticket b { display: block; font-size: 28px; color: var(--accent); margin-bottom: 6px; }
+    .cta { text-align: center; padding: 48px 0 72px; }
+    .btn { display: inline-block; background: var(--accent); color: var(--bg); text-decoration: none; padding: 12px 18px; text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; margin: 6px; }
+    footer { border-top: 2px solid var(--accent); padding: 20px 0 40px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 800px) { .pillars, .tickets { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="nav"><div class="wrap">
+    <a class="brand" href="./">American Tech Fellowship</a>
+    <nav>
+      <a href="./">Packet</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="loyalty.html">Loyalty</a>
+    </nav>
+  </div></header>
+  <section><div class="wrap">
+    <p class="kicker">American worker · written operating path</p>
+    <h1>THE<br>FLOOR PLAYBOOK</h1>
+    <p class="tag">You built this fellowship for the worker who never left the floor.<br>I never left.<br><em>This is how I write the operating path when perfect specs never arrive.</em></p>
+    <p class="lead" style="margin-top:18px">American Tech is unpaid, remote, 12 weeks, Foundry and AIP in the hands of people who still touch metal. The IPS artifacts are that hunger on paper: you do not wait for a clean CSV. You measure CPU, RAM, disk wait. You write what was changed. You name the skill-up. You leave a QA twin of production.</p>
+  </div></section>
+  <section><div class="wrap">
+    <p class="kicker">Three surfaces for this role</p>
+    <h2>What the artifacts mean here</h2>
+    <div class="pillars">
+      <article class="pillar"><p class="kicker">01</p><h3>Write it down</h3><p>Environment Summary, Upgrade Roadmap, Phase review, v10 test deck. Owner on the cover. That is Foundry instinct — ontology, not a dashboard class.</p></article>
+      <article class="pillar"><p class="kicker">02</p><h3>Measure the garage</h3><p>Same loop now on an RTX 4070: baseline, goal, bottleneck, eliminate. Waddell & Reed’s I/O wait was the plant telling the truth. The GPU routing bench is the same muscle.</p></article>
+      <article class="pillar"><p class="kicker">03</p><h3>Earn the door</h3><p>Unpaid. Two weeknights. I still want it. Knowledge transfer is a deliverable. The team is praised in writing. Loyalty is how a fellow becomes a hire.</p></article>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <p class="kicker">The receipts in the files</p>
+    <h2>Four floors. Same loop.</h2>
+    <div class="tickets">
+      <article class="ticket"><b>P1</b><div>Northwestern Mutual</div><p>QA/prod domains to best practice. GCS escalation. QA twin of production so the next incident does not take the line down.</p></article>
+      <article class="ticket"><b>20–30%</b><div>Mercedes-Benz Financial</div><p>Cache in RAM. Knowledge transfer on the real loads. Cheat sheet left with the team.</p></article>
+      <article class="ticket"><b>v9→v10</b><div>Waddell &amp; Reed</div><p>Measured I/O wait. UNC is not HA. In-place vs parallel vs clone plus six-class testing.</p></article>
+      <article class="ticket"><b>Phase 2</b><div>Farmers Insurance</div><p>Guidewire XML. 30+ repos as domain risk. Skill-up named. Team praised in the write-up.</p></article>
+    </div>
+    <p class="lead" style="margin-top:22px">Full methodology — bottleneck isolation, dos/don’ts, upgrade types, DVO testing — lives on the operator campaign: <a href="https://jpanasuk-netizen.github.io/the-closer/playbook.html">the-closer/playbook</a>. Hostnames stay off the public copy.</p>
+  </div></section>
+  <section class="cta"><div class="wrap">
+    <h2>If you want the American worker this program was written for — already on the floor, already in the garage, ready for Foundry — this is the operating path.</h2>
+    <a class="btn" href="loyalty.html">Read the loyalty talk</a>
+    <a class="btn" href="./">Back to the packet</a>
+  </div></section>
+  <footer><div class="wrap">Jeremy Panasuk · American Tech Fellowship · Palantir × Ontologize · https://jpanasuk-netizen.github.io/for-american-tech/</div></footer>
+</body>
+</html>
