@@ -52,7 +52,17 @@
     .honest { margin-top: 6px; background: #1e3a5f; color: #f4efe4; padding: 7px 9px; font-size: 7.4pt; line-height: 1.28; }
     .chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 5px; }
     .chip { background: #1e3a5f; color: #f4efe4; font-family: "Oswald", sans-serif; font-size: 6.4pt; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 7px; }
-    .awards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin: 5px 0 6px; }
+    .tl { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 6px 0 5px; position: relative; }
+    .tl::before { content: ""; position: absolute; top: 16px; left: 8%; right: 8%; height: 2px; background: #b8860b; }
+    .tl-n { text-align: center; position: relative; z-index: 1; }
+    .tl-n .yr { font-family: "Oswald", sans-serif; font-size: 7.4pt; letter-spacing: 0.04em; text-transform: uppercase; color: #1e3a5f; line-height: 1; }
+    .tl-n .dot { width: 8px; height: 8px; border-radius: 50%; background: #b8860b; border: 2px solid #1e3a5f; margin: 4px auto 4px; }
+    .tl-n .lab { font-size: 6.3pt; line-height: 1.18; color: #2a3340; }
+    .tl-n .lab b { display: block; font-family: "Oswald", sans-serif; font-size: 6.6pt; letter-spacing: 0.03em; text-transform: uppercase; color: #1e3a5f; font-weight: 600; }
+    .tl-n.mark .dot { background: #1e3a5f; border-color: #b8860b; }
+    .tl-n.mark .yr { color: #b8860b; }
+    .ladder { font-size: 6.8pt; color: #5c6b7a; margin: 0 0 5px; text-align: center; }
+    .awards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin: 4px 0 5px; }
     .award { background: #f4efe4; border: 1px solid #c9c0ae; padding: 5px 7px; }
     .award b { display: block; font-family: "Oswald", sans-serif; font-size: 7.6pt; text-transform: uppercase; letter-spacing: 0.04em; color: #1e3a5f; }
     .award span { font-size: 7pt; color: #2a3340; }
@@ -130,9 +140,40 @@
 
       <h2>05 — Consulting Manager / Program Manager / SEAL · Informatica · Jun 2008 – Oct 2019</h2>
       <p>Started as Analyst in 2008. Analyst → Sr. Analyst twice in four years. Sr. Analyst → Program Manager in ten. SEAL team. Teams of 7–14. v7–v10 upgrade specialist. Consultant of the Year runner-up (2016). Parachute closer: 20 troubled accounts entered, 19 recovered. The original forward-deployed motion — different badge. I sat with manufacturers, banks, and fabs from the line to the exec table and left a system the next shift could run.</p>
+      <div class="tl">
+        <div class="tl-n">
+          <div class="yr">2004</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Assoc / BA</b>Cargill</div>
+        </div>
+        <div class="tl-n">
+          <div class="yr">2007</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Analyst</b>Prime</div>
+        </div>
+        <div class="tl-n mark">
+          <div class="yr">2008</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Sr. Analyst ×1</b>Prime</div>
+        </div>
+        <div class="tl-n">
+          <div class="yr">2008</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Analyst</b>Informatica</div>
+        </div>
+        <div class="tl-n mark">
+          <div class="yr">4 yrs</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Sr. Analyst ×2</b>Informatica</div>
+        </div>
+        <div class="tl-n mark">
+          <div class="yr">10 yrs</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Program Mgr</b>Informatica · 2018–19</div>
+        </div>
+      </div>
+      <p class="ladder">Ladder inside those ten years: Sr. Analyst → Principal Consultant → Technical Delivery Manager → Solution Delivery Manager → Program Manager / Consulting Manager.</p>
       <div class="chips">
-        <div class="chip">Analyst → Sr. Analyst ×2 / 4 yrs</div>
-        <div class="chip">Sr. Analyst → Program Manager / 10 yrs</div>
         <div class="chip">SEAL team</div>
         <div class="chip">v7–v10 upgrades</div>
         <div class="chip">19 / 20 recovered</div>
