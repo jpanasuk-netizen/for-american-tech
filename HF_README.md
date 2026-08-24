@@ -4,6 +4,7 @@ emoji: 🛠️
 colorFrom: blue
 colorTo: yellow
 sdk: static
+app_file: index.html
 pinned: false
 short_description: Jeremy Panasuk packet for Palantir American Tech Fellowship.
 ---

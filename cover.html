@@ -9,9 +9,14 @@
   <style>
     @page { size: letter; margin: 0; }
     * { box-sizing: border-box; margin: 0; padding: 0; font-variant-ligatures: none; font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "calt" 0; }
-    html, body { background: #e6dfd0; }
+    html, body { background: #e6dfd0; margin: 0; padding: 0; width: 100%; min-height: 100vh; }
     * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .sheet { width: 8.5in; height: 11in; overflow: hidden; position: relative; background: #e6dfd0; color: #152033; font-family: "Source Sans 3", Arial, sans-serif; margin: 0 auto; }
+    @media screen {
+      .sheet { width: 100%; max-width: none; height: auto; min-height: 100vh; overflow: visible; }
+      .pad { padding: 36px 6vw 72px; }
+      .foot { position: relative; left: auto; right: auto; bottom: auto; margin-top: 28px; }
+    }
     .navybar { height: 10px; background: #1e3a5f; }
     .goldbar { height: 4px; background: #b8860b; }
     .pad { padding: 0.38in 0.52in 0.40in; }
