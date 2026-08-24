@@ -30,7 +30,7 @@
     .trusted b { font-family: "Oswald", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; font-size: 6.4pt; color: #b8860b; }
     h2 { font-family: "Oswald", sans-serif; font-size: 8pt; letter-spacing: 0.12em; text-transform: uppercase; color: #1e3a5f; margin: 6px 0 4px; border-bottom: 2px solid #1e3a5f; padding-bottom: 1px; }
     p { font-size: 7.7pt; line-height: 1.28; color: #2a3340; }
-    .who { font-size: 8pt; }
+    .who { font-size: 7.8pt; }
     .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
     .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; }
     .card { background: #f4efe4; border: 1px solid #c9c0ae; padding: 6px 7px; }
@@ -52,7 +52,7 @@
     .honest { margin-top: 6px; background: #1e3a5f; color: #f4efe4; padding: 7px 9px; font-size: 7.4pt; line-height: 1.28; }
     .chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 5px; }
     .chip { background: #1e3a5f; color: #f4efe4; font-family: "Oswald", sans-serif; font-size: 6.4pt; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 7px; }
-    .tl { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 6px 0 5px; position: relative; }
+    .tl { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 4px 0 2px; position: relative; }
     .tl::before { content: ""; position: absolute; top: 16px; left: 8%; right: 8%; height: 2px; background: #b8860b; }
     .tl-n { text-align: center; position: relative; z-index: 1; }
     .tl-n .yr { font-family: "Oswald", sans-serif; font-size: 7.4pt; letter-spacing: 0.04em; text-transform: uppercase; color: #1e3a5f; line-height: 1; }
@@ -61,7 +61,7 @@
     .tl-n .lab b { display: block; font-family: "Oswald", sans-serif; font-size: 6.6pt; letter-spacing: 0.03em; text-transform: uppercase; color: #1e3a5f; font-weight: 600; }
     .tl-n.mark .dot { background: #1e3a5f; border-color: #b8860b; }
     .tl-n.mark .yr { color: #b8860b; }
-    .ladder { font-size: 6.8pt; color: #5c6b7a; margin: 0 0 5px; text-align: center; }
+    .ladder { font-size: 6.6pt; color: #5c6b7a; margin: 0 0 5px; text-align: center; }
     .awards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin: 4px 0 5px; }
     .award { background: #f4efe4; border: 1px solid #c9c0ae; padding: 5px 7px; }
     .award b { display: block; font-family: "Oswald", sans-serif; font-size: 7.6pt; text-transform: uppercase; letter-spacing: 0.04em; color: #1e3a5f; }
@@ -96,7 +96,41 @@
         <div class="m"><b>CFO</b><span>Horizon Milling 2005</span></div>
       </div>
       <p class="trusted"><b>Trusted on the floor</b> &nbsp; Cargill · Horizon Milling · Dawn Foods · Micron · Mercedes · Toyota · PepsiCo · Ace · Kohl’s · Navy Federal · Smith &amp; Nephew · BNY · JPMorgan</p>
-      <p class="who">You asked for builders who will wire a sensor, flash firmware, or ship production code. Who read a messy CSV and think instrument, automate, optimize. Who do not wait for perfect specs. That is not a personality test. That is twenty years of live plants, then two years teaching myself Docker, WSL, Python, and agents until the numbers showed up in SQLite. This fellowship is 12 weeks of Foundry and AIP. I will treat it like a deployment, not a class.</p>
+      <p class="stamp" style="margin:2px 0 0;">The climb · Analyst → Sr. Analyst twice in 4 years · Sr. Analyst → Program Manager in 10</p>
+      <div class="tl">
+        <div class="tl-n">
+          <div class="yr">2004</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Assoc / BA</b>Cargill</div>
+        </div>
+        <div class="tl-n">
+          <div class="yr">2007</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Analyst</b>Prime</div>
+        </div>
+        <div class="tl-n mark">
+          <div class="yr">2008</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Sr. Analyst ×1</b>Prime</div>
+        </div>
+        <div class="tl-n">
+          <div class="yr">2008</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Analyst</b>Informatica</div>
+        </div>
+        <div class="tl-n mark">
+          <div class="yr">4 yrs</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Sr. Analyst ×2</b>Informatica</div>
+        </div>
+        <div class="tl-n mark">
+          <div class="yr">10 yrs</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Program Mgr</b>Informatica · 2018–19</div>
+        </div>
+      </div>
+      <p class="ladder">Sr. Analyst → Principal Consultant → Technical Delivery Manager → Solution Delivery Manager → Program Manager / Consulting Manager.</p>
+      <p class="who">You asked for builders who will wire a sensor, flash firmware, or ship production code. Who read a messy CSV and think instrument, automate, optimize. Who do not wait for perfect specs. Twenty years on live plants, then two years of Docker, WSL, Python, and agents until the numbers showed up in SQLite. This fellowship is 12 weeks of Foundry and AIP. I will treat it like a deployment.</p>
 
       <h2>01 — Your signals · my proof</h2>
       <div class="grid2">
@@ -139,40 +173,7 @@
       <p><b>PepsiCo</b> — Grid/HA + Data Integration Hub across NA/LATAM. Led v9→v10 with zero data loss. Teradata → Big Data (~40% analytics lift). Follow-the-sun with offshore. <b>Ace Hardware</b> — Teradata warehouse → Big Data objects and runtimes. Business + QA deploy path; sat with the floor, not just the ticket queue. <b>Ameriprise</b> — Enterprise Data Governance: IDQ, EDC, Axon. 200+ critical data elements. 24×7 platform, patches, local DG rollout.</p>
 
       <h2>05 — Consulting Manager / Program Manager / SEAL · Informatica · Jun 2008 – Oct 2019</h2>
-      <p>Started as Analyst in 2008. Analyst → Sr. Analyst twice in four years. Sr. Analyst → Program Manager in ten. SEAL team. Teams of 7–14. v7–v10 upgrade specialist. Consultant of the Year runner-up (2016). Parachute closer: 20 troubled accounts entered, 19 recovered. The original forward-deployed motion — different badge. I sat with manufacturers, banks, and fabs from the line to the exec table and left a system the next shift could run.</p>
-      <div class="tl">
-        <div class="tl-n">
-          <div class="yr">2004</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Assoc / BA</b>Cargill</div>
-        </div>
-        <div class="tl-n">
-          <div class="yr">2007</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Analyst</b>Prime</div>
-        </div>
-        <div class="tl-n mark">
-          <div class="yr">2008</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Sr. Analyst ×1</b>Prime</div>
-        </div>
-        <div class="tl-n">
-          <div class="yr">2008</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Analyst</b>Informatica</div>
-        </div>
-        <div class="tl-n mark">
-          <div class="yr">4 yrs</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Sr. Analyst ×2</b>Informatica</div>
-        </div>
-        <div class="tl-n mark">
-          <div class="yr">10 yrs</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Program Mgr</b>Informatica · 2018–19</div>
-        </div>
-      </div>
-      <p class="ladder">Ladder inside those ten years: Sr. Analyst → Principal Consultant → Technical Delivery Manager → Solution Delivery Manager → Program Manager / Consulting Manager.</p>
+      <p>Started as Analyst in 2008. Analyst → Sr. Analyst twice in four years. Sr. Analyst → Program Manager in ten. SEAL team. Teams of 7–14. v7–v10 upgrade specialist. Consultant of the Year runner-up (2016). Parachute closer: 20 troubled accounts entered, 19 recovered. The original forward-deployed motion — different badge. I sat with manufacturers, banks, and fabs from the line to the exec table and left a system the next shift could run. Ladder: Sr. Analyst → Principal Consultant → Technical Delivery Manager → Solution Delivery Manager → Program Manager / Consulting Manager.</p>
       <div class="chips">
         <div class="chip">SEAL team</div>
         <div class="chip">v7–v10 upgrades</div>
