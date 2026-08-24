@@ -52,15 +52,20 @@
     .honest { margin-top: 6px; background: #1e3a5f; color: #f4efe4; padding: 7px 9px; font-size: 7.4pt; line-height: 1.28; }
     .chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 5px; }
     .chip { background: #1e3a5f; color: #f4efe4; font-family: "Oswald", sans-serif; font-size: 6.4pt; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 7px; }
-    .tl { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; margin: 4px 0 2px; position: relative; }
-    .tl::before { content: ""; position: absolute; top: 16px; left: 8%; right: 8%; height: 2px; background: #b8860b; }
+    .tl { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin: 3px 0 4px; position: relative; }
+    .tl::before { content: ""; position: absolute; top: 15px; left: 6%; right: 6%; height: 2px; background: #b8860b; }
     .tl-n { text-align: center; position: relative; z-index: 1; }
-    .tl-n .yr { font-family: "Oswald", sans-serif; font-size: 7.4pt; letter-spacing: 0.04em; text-transform: uppercase; color: #1e3a5f; line-height: 1; }
-    .tl-n .dot { width: 8px; height: 8px; border-radius: 50%; background: #b8860b; border: 2px solid #1e3a5f; margin: 4px auto 4px; }
-    .tl-n .lab { font-size: 6.3pt; line-height: 1.18; color: #2a3340; }
-    .tl-n .lab b { display: block; font-family: "Oswald", sans-serif; font-size: 6.6pt; letter-spacing: 0.03em; text-transform: uppercase; color: #1e3a5f; font-weight: 600; }
+    .tl-n .yr { font-family: "Oswald", sans-serif; font-size: 7pt; letter-spacing: 0.03em; text-transform: uppercase; color: #1e3a5f; line-height: 1; }
+    .tl-n .dot { width: 8px; height: 8px; border-radius: 50%; background: #b8860b; border: 2px solid #1e3a5f; margin: 3px auto 3px; }
+    .tl-n .lab { font-size: 6.1pt; line-height: 1.15; color: #2a3340; }
+    .tl-n .lab b { display: block; font-family: "Oswald", sans-serif; font-size: 6.4pt; letter-spacing: 0.02em; text-transform: uppercase; color: #1e3a5f; font-weight: 600; }
     .tl-n.mark .dot { background: #1e3a5f; border-color: #b8860b; }
     .tl-n.mark .yr { color: #b8860b; }
+    .climb { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 4px 0 5px; }
+    .bar { background: #1e3a5f; color: #f4efe4; padding: 6px 8px 5px; }
+    .bar .k { font-family: "Oswald", sans-serif; font-size: 7.2pt; letter-spacing: 0.08em; text-transform: uppercase; color: #b8860b; }
+    .bar .path { font-family: "Oswald", sans-serif; font-size: 9pt; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1.15; margin: 1px 0; }
+    .bar .note { font-size: 6.5pt; color: #e6dfd0; }
     .ladder { font-size: 6.6pt; color: #5c6b7a; margin: 0 0 5px; text-align: center; }
     .awards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; margin: 4px 0 5px; }
     .award { background: #f4efe4; border: 1px solid #c9c0ae; padding: 5px 7px; }
@@ -96,40 +101,55 @@
         <div class="m"><b>CFO</b><span>Horizon Milling 2005</span></div>
       </div>
       <p class="trusted"><b>Trusted on the floor</b> &nbsp; Cargill · Horizon Milling · Dawn Foods · Micron · Mercedes · Toyota · PepsiCo · Ace · Kohl’s · Navy Federal · Smith &amp; Nephew · BNY · JPMorgan</p>
-      <p class="stamp" style="margin:2px 0 0;">The climb · Analyst → Sr. Analyst twice in 4 years · Sr. Analyst → Program Manager in 10</p>
+      <div class="climb">
+        <div class="bar">
+          <div class="k">Twice in 4 years</div>
+          <div class="path">Analyst → Sr. Analyst</div>
+          <div class="note">Prime 2008 · then Informatica hired me as Analyst again and I made Sr. Analyst a second time.</div>
+        </div>
+        <div class="bar">
+          <div class="k">In 10 years</div>
+          <div class="path">Sr. Analyst → Program Manager</div>
+          <div class="note">Informatica 2008–2019. Principal Consultant → Technical Delivery Manager → Solution Delivery Manager → Program Manager.</div>
+        </div>
+      </div>
       <div class="tl">
+        <div class="tl-n">
+          <div class="yr">1996</div>
+          <div class="dot"></div>
+          <div class="lab"><b>Shop</b>Fireworks</div>
+        </div>
         <div class="tl-n">
           <div class="yr">2004</div>
           <div class="dot"></div>
-          <div class="lab"><b>Assoc / BA</b>Cargill</div>
+          <div class="lab"><b>Cargill</b>Assoc / BA</div>
         </div>
-        <div class="tl-n">
+        <div class="tl-n mark">
           <div class="yr">2007</div>
           <div class="dot"></div>
-          <div class="lab"><b>Analyst</b>Prime</div>
+          <div class="lab"><b>Prime</b>Analyst → Sr.</div>
         </div>
         <div class="tl-n mark">
           <div class="yr">2008</div>
           <div class="dot"></div>
-          <div class="lab"><b>Sr. Analyst ×1</b>Prime</div>
+          <div class="lab"><b>Informatica</b>Analyst → PM</div>
         </div>
         <div class="tl-n">
-          <div class="yr">2008</div>
+          <div class="yr">2020</div>
           <div class="dot"></div>
-          <div class="lab"><b>Analyst</b>Informatica</div>
+          <div class="lab"><b>TCS</b>PepsiCo / Ace</div>
+        </div>
+        <div class="tl-n">
+          <div class="yr">2023</div>
+          <div class="dot"></div>
+          <div class="lab"><b>MOBE</b>Talend 8</div>
         </div>
         <div class="tl-n mark">
-          <div class="yr">4 yrs</div>
+          <div class="yr">2024</div>
           <div class="dot"></div>
-          <div class="lab"><b>Sr. Analyst ×2</b>Informatica</div>
-        </div>
-        <div class="tl-n mark">
-          <div class="yr">10 yrs</div>
-          <div class="dot"></div>
-          <div class="lab"><b>Program Mgr</b>Informatica · 2018–19</div>
+          <div class="lab"><b>Lab</b>WSL · GPU · AIP</div>
         </div>
       </div>
-      <p class="ladder">Sr. Analyst → Principal Consultant → Technical Delivery Manager → Solution Delivery Manager → Program Manager / Consulting Manager.</p>
       <p class="who">You asked for builders who will wire a sensor, flash firmware, or ship production code. Who read a messy CSV and think instrument, automate, optimize. Who do not wait for perfect specs. Twenty years on live plants, then two years of Docker, WSL, Python, and agents until the numbers showed up in SQLite. This fellowship is 12 weeks of Foundry and AIP. I will treat it like a deployment.</p>
 
       <h2>01 — Your signals · my proof</h2>
