@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THE SUIT · Canonical Run · Jeremy Panasuk</title>
+  <meta name="description" content="Foundry and AIP around the fab-run job. Canonical Run. Palantir's add. Not a garage pitch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body data-act="0" data-wrap="0">
+  <div class="shell">
+    <header class="top">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>THE <span>SUIT</span></h1>
+          <p>Foundry and AIP around the fab-run job · Canonical Run</p>
+        </div>
+      </div>
+      <div class="wrap-meter" id="wrap-meter" title="AIP wrapping the worker — wearable, not a custom closer">
+        <span>WRAP</span>
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="top-meta">
+        <a class="pill" href="../">Packet</a>
+        <span class="pill live" id="incident-pill"><span class="dot"></span>PLANT LIVE</span>
+        <span class="pill">SHIFT 2 · 4 ON FLOOR</span>
+        <span class="pill suit" id="clock">00:00:00</span>
+      </div>
+    </header>
+
+    <div class="prompter" id="prompter">
+      <div class="beats">
+        <div class="beat-tag" id="beat-tag">Armed · waiting</div>
+        <div class="act-row" aria-hidden="true">
+          <div class="act" title="Arena"></div>
+          <div class="act" title="Constraint"></div>
+          <div class="act" title="Upgrade"></div>
+        </div>
+        <div class="act-names" aria-hidden="true">
+          <span>1 Arena</span><span>2 Constraint</span><span>3 Iron Man</span>
+        </div>
+      </div>
+      <p class="line" id="speak" aria-live="polite">Press Space to arm the first beat. D runs the whole take.</p>
+      <div class="bar">
+        <button type="button" id="back-btn">Back</button>
+        <button type="button" class="primary" id="next-btn">Arm</button>
+        <button type="button" id="auto-btn">Auto-demo</button>
+        <button type="button" id="prompt-btn">Prompter</button>
+        <button type="button" id="help-btn">Keys</button>
+        <button type="button" class="warn" id="reset-btn">Reset</button>
+      </div>
+      <div class="prog" aria-hidden="true"><i id="prog-fill"></i></div>
+    </div>
+
+    <div class="proof">
+      <b>The job</b>
+      <span class="chip"><em>CANONICAL RUN</em>one view of the total run</span>
+      <span class="chip"><em>CDC</em>live change off SQL Server</span>
+      <span class="chip"><em>SESSION</em>judged against the object</span>
+      <span class="chip"><em>SITE</em>four sites, four truths</span>
+      <span class="chip"><em>MAPPING</em>deck chairs</span>
+      <span class="chip"><em>THEIR ADD</em>Foundry + AIP</span>
+    </div>
+
+    <aside class="rail">
+      <div class="sec">The ontology · Canonical Run</div>
+      <div class="list" id="floors">
+        <button class="obj" data-id="lab"><i class="k"></i><span><span class="name">Canonical Run</span><span class="sub">One view of the total run</span></span><span class="tag">OBJECT</span></button>
+        <button class="obj" data-id="erp"><i class="k"></i><span><span class="name">CDC Journal</span><span class="sub">Live change off SQL Server</span></span><span class="tag">LIVE</span></button>
+        <button class="obj" data-id="timedim"><i class="k"></i><span><span class="name">Session</span><span class="sub">Judged against the object</span></span><span class="tag">LIVE</span></button>
+        <button class="obj" data-id="nightjob"><i class="k"></i><span><span class="name">Site</span><span class="sub">Four sites, four truths</span></span><span class="tag">ARENA</span></button>
+        <button class="obj" data-id="whse"><i class="k"></i><span><span class="name">Mapping</span><span class="sub">Deck chairs · not the suit</span></span><span class="tag">CONSTRAINT</span></button>
+        <button class="obj" data-id="runbook"><i class="k"></i><span><span class="name">Runbook</span><span class="sub">Put it on the floor</span></span><span class="tag">OUT</span></button>
+      </div>
+      <div class="sec">Scars · why I can see it</div>
+      <div class="list">
+        <button class="obj" data-id="oils"><i class="k"></i><span><span class="name">Night ERP window</span><span class="sub">Oils plants · floor did not wait</span></span><span class="tag">SCAR</span></button>
+        <button class="obj" data-id="dawn"><i class="k"></i><span><span class="name">Warehouse load</span><span class="sub">8h → under 1h</span></span><span class="tag">SCAR</span></button>
+        <button class="obj" data-id="micron"><i class="k"></i><span><span class="name">Line cannot go down</span><span class="sub">Built right · they kept us</span></span><span class="tag">SCAR</span></button>
+        <button class="obj" data-id="vw"><i class="k"></i><span><span class="name">Two weeks · day early</span><span class="sub">Grid/HA · four shadowed</span></span><span class="tag">SCAR</span></button>
+        <button class="obj" data-id="crisis"><i class="k"></i><span><span class="name">Shops on fire</span><span class="sub">19 of 20 recovered</span></span><span class="tag">SCAR</span></button>
+      </div>
+      <div class="detail" id="detail"><strong>Canonical Run</strong>One view of the total run. Every Informatica session judged against it. Palantir AIP as the suit wrapping those objects. I have not shipped Foundry.</div>
+    </aside>
+
+    <main class="stage">
+      <div class="stage-head">
+        <h2 id="stage-title">Canonical Run · one view of the total run</h2>
+        <div class="views">
+          <button type="button" class="on" data-view="graph">Graph</button>
+          <button type="button" data-view="map">Four truths</button>
+          <button type="button" data-view="runbook">Runbook</button>
+          <button type="button" data-view="measure">Measure</button>
+        </div>
+      </div>
+      <div class="canvas-wrap" id="graph-wrap">
+        <svg class="graph" viewBox="0 0 720 560" role="img" aria-label="Canonical Run ontology with Palantir AIP as the suit wrapping it">
+          <defs>
+            <filter id="glow-suit" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3.2" result="b" />
+              <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+            <filter id="glow-alert" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2.4" result="b" />
+              <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+            <filter id="glow-gold" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="4" result="b" />
+              <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
+
+          <path class="edge" data-id="erp-nightjob" d="M140 158 L100 270" />
+          <path class="edge" data-id="timedim-whse" d="M580 158 L620 270" />
+          <path class="edge" data-id="nightjob-spec" d="M100 298 L140 410" />
+          <path class="edge" data-id="whse-goodpart" d="M620 298 L580 410" />
+          <path class="edge mismatch" data-id="spec-goodpart" d="M168 410 L552 410" />
+          <path class="edge" data-id="shift-runbook" d="M248 510 L472 510" />
+
+          <path class="edge suit-edge" data-id="aip-lab" d="M360 198 L360 90" />
+          <path class="edge suit-edge" data-id="aip-erp" d="M332 242 L168 148" />
+          <path class="edge suit-edge" data-id="aip-timedim" d="M388 242 L552 148" />
+          <path class="edge suit-edge" data-id="aip-nightjob" d="M288 270 L128 270" />
+          <path class="edge suit-edge" data-id="aip-whse" d="M432 270 L592 270" />
+          <path class="edge suit-edge" data-id="aip-spec" d="M332 298 L168 392" />
+          <path class="edge suit-edge" data-id="aip-goodpart" d="M388 298 L552 392" />
+          <path class="edge suit-edge" data-id="aip-shift" d="M332 318 L236 488" />
+          <path class="edge suit-edge" data-id="aip-runbook" d="M388 318 L484 488" />
+
+          <g class="node lab" data-id="lab" transform="translate(360,62)">
+            <polygon class="hex" points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" />
+            <text class="lab" y="4">RUN</text>
+            <text class="sublab" y="36">CANONICAL</text>
+          </g>
+          <g class="node" data-id="erp" transform="translate(140,130)">
+            <polygon class="hex" points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" />
+            <text class="lab" y="4">CDC</text>
+            <text class="sublab" y="42">JOURNAL</text>
+          </g>
+          <g class="node" data-id="timedim" transform="translate(580,130)">
+            <polygon class="hex" points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" />
+            <text class="lab" y="4">SESSION</text>
+            <text class="sublab" y="42">INFORMATICA</text>
+          </g>
+          <g class="node" data-id="nightjob" transform="translate(100,270)">
+            <polygon class="hex" points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" />
+            <text class="lab" y="4">SITE</text>
+            <text class="sublab" y="42">FOUR TRUTHS</text>
+          </g>
+          <g class="node" data-id="whse" transform="translate(620,270)">
+            <polygon class="hex" points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" />
+            <text class="lab" y="4">MAPPING</text>
+            <text class="sublab" y="42">DECK CHAIRS</text>
+          </g>
+          <g class="node" data-id="spec" transform="translate(140,410)">
+            <polygon class="hex" points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" />
+            <text class="lab" y="4">TUE</text>
+            <text class="sublab" y="42">EXTRACT</text>
+          </g>
+          <g class="node" data-id="goodpart" transform="translate(580,410)">
+            <polygon class="hex" points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" />
+            <text class="lab" y="4">WED</text>
+            <text class="sublab" y="42">EXTRACT</text>
+          </g>
+          <g class="node" data-id="shift" transform="translate(220,510)">
+            <polygon class="hex" points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" />
+            <text class="lab" y="4">TUESDAY</text>
+            <text class="sublab" y="32">NOTES</text>
+            <g class="crew" aria-hidden="true">
+              <circle class="wearer" cx="-9" cy="42" r="2.8" />
+              <circle class="wearer" cx="-3" cy="42" r="2.8" />
+              <circle class="wearer" cx="3" cy="42" r="2.8" />
+              <circle class="wearer" cx="9" cy="42" r="2.8" />
+            </g>
+          </g>
+          <g class="node" data-id="runbook" transform="translate(500,510)">
+            <polygon class="hex" points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" />
+            <text class="lab" y="4">RUNBOOK</text>
+            <text class="sublab" y="34">TUESDAY</text>
+          </g>
+
+          <g class="suit" transform="translate(360,270)" aria-hidden="true">
+            <polygon class="suit-shell" points="0,-78 67.5,-39 67.5,39 0,78 -67.5,39 -67.5,-39" />
+            <path class="suit-orbit" pathLength="600" d="M0,-78 L67.5,-39 L67.5,39 L0,78 L-67.5,39 L-67.5,-39 Z" />
+            <text class="suit-label" y="-92">AIP · THE SUIT</text>
+          </g>
+
+          <g class="node op" data-id="op" transform="translate(360,270)">
+            <polygon class="hex" points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" />
+            <g class="person" aria-hidden="true">
+              <circle cx="0" cy="-8" r="6.5" />
+              <path d="M-12 22c0-11 6.5-16 12-16s12 5 12 16" />
+            </g>
+            <text class="sublab" y="50">WEARER</text>
+          </g>
+        </svg>
+      </div>
+      <div class="panel-view" id="view-map">
+        <div class="diff-head">
+          <span>Live CDC</span>
+          <span></span>
+          <span>Session / mapping</span>
+          <span>Ontology</span>
+          <span>Status</span>
+        </div>
+        <div class="diff-rows" id="map-body"></div>
+        <div class="bind-card" id="bind-card">
+          <p class="kicker">Object type · not yet bound</p>
+          <h3 id="bind-title">Canonical Run</h3>
+          <p id="bind-copy">CDC still has four truths. The mapping cannot see Canonical Run yet.</p>
+          <ul>
+            <li><b>Source</b> live CDC journals off SQL Server</li>
+            <li><b>Judged</b> every Informatica session against Canonical Run</li>
+            <li><b>Score</b> match or it does not, before the meeting</li>
+            <li><b>Owner</b> Tuesday still has the notes</li>
+          </ul>
+        </div>
+        <p class="note">Four sites, four truths. Tuesday and Wednesday both looked right. Canonical Run is the object that stays.</p>
+      </div>
+      <div class="panel-view" id="view-runbook">
+        <article class="runbook">
+          <h3>Environment / night path</h3>
+          <p class="meta" id="runbook-stamp">Owner: Jeremy Panasuk · Shift 2 · not shipped</p>
+          <ol>
+            <li><b>What I want wrapped.</b> We moved a lot of tables. We never put a Run on the floor. Four sites, four truths. Deck chairs.</li>
+            <li><b>What the suit would bind.</b> Canonical Run as a real object. One view of the total run. Every Informatica session judged against it.</li>
+            <li><b>What AIP would score.</b> Live CDC against that object before anyone opens a mapping. Match or it does not. The argument dies. The object stays.</li>
+            <li><b>How Tuesday wears it.</b> Agents judge a live session, stop a bad one, and leave Tuesday the notes. The same American worker. The suit does the judgment.</li>
+            <li><b>How we measure.</b> Move data is table stakes. Make the Run real. Score it live. Stop the bad session before anyone gets in a room.</li>
+            <li><b>Who wears it.</b> I have not shipped Foundry. Put Canonical Run on the floor, and put me on that deployment.</li>
+          </ol>
+        </article>
+      </div>
+      <div class="panel-view" id="view-measure">
+        <div class="measure">
+          <div class="mrow wait"><b>Canonical Run</b><span>not shipped · that is why I am here</span><i>THEIR ADD</i></div>
+          <div class="mrow"><b>Arena</b><span>Micron fabs · we never put a Run on the floor</span><i>SHORT</i></div>
+          <div class="mrow"><b>Constraint</b><span>more journals · four truths · deck chairs</span><i>SHORT</i></div>
+        </div>
+        <p class="note">I have not shipped Foundry. I did not already build this ontology. That is your add. That is why I am here.</p>
+      </div>
+    </main>
+
+    <aside class="agent">
+      <div class="sec">AIP wrapping Canonical Run</div>
+      <div class="log" id="log"></div>
+      <div class="actions">
+        <button type="button" data-act="bind" disabled>Bind Canonical Run</button>
+        <button type="button" data-act="remap" disabled>Score CDC</button>
+        <button type="button" data-act="approve" disabled>Approve</button>
+        <button type="button" data-act="ship" disabled>Ship Canonical Run</button>
+        <button type="button" data-act="measure" disabled style="grid-column:1 / -1">Measure after</button>
+      </div>
+      <form class="ask" id="ask-form">
+        <input id="ask-q" type="text" placeholder="Ask Canonical Run…" autocomplete="off" />
+        <button type="submit">Ask</button>
+      </form>
+    </aside>
+
+    <p class="hint">Space next · D auto · 1 2 3 acts · T prompter · F fullscreen · R reset · H help · Not Palantir software — Foundry + AIP around the fab-run job.</p>
+  </div>
+
+  <div class="splash" id="splash">
+    <div class="mark"></div>
+    <h1>THE SUIT</h1>
+    <p>Palantir is the suit around a job I already lived.<br>Canonical Run. Foundry. AIP. Your add is the bulk.</p>
+    <ol class="acts">
+      <li><b>1</b> Arena</li>
+      <li><b>2</b> Constraint</li>
+      <li><b>3</b> Iron Man upgrade</li>
+    </ol>
+    <p class="who">Jeremy Panasuk · New Auburn, Wisconsin</p>
+    <button type="button" id="arm-btn">Arm the suit · Space</button>
+    <p class="honest">Not Palantir software. I have not shipped Foundry. I did not already build this ontology. Put Canonical Run on the floor.</p>
+  </div>
+
+  <div class="help" id="help">
+    <div class="card">
+      <p class="beat-tag">Camera keys</p>
+      <p style="margin:10px 0 14px"><kbd>Space</kbd> next beat · <kbd>D</kbd> auto-demo · <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> arena / constraint / upgrade · <kbd>T</kbd> hide teleprompter · <kbd>F</kbd> fullscreen · <kbd>R</kbd> reset · <kbd>Esc</kbd> pause</p>
+      <p>Talk the line at the top. Hermes cut. Arena and constraint short. Bulk is Foundry and AIP as the Iron Man suit around the fab-run job. Unlisted YouTube. Email Catherine Rolland. Do not mix the GoFundMe.</p>
+      <p style="margin-top:12px;color:var(--muted)">Open <code>CAMERA.md</code> in this folder for the dry-run script and the email. Record mode: <code>RECORD.bat</code> or <code>?record=1</code>.</p>
+    </div>
+  </div>
+  <script src="appv2.js"></script>
+</body>
+</html>
