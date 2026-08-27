@@ -35,4 +35,5 @@ That’s your add. That’s why I’m here.
 To: crolland@palantir.com
 Subject: American Tech Fellowship — video (Jeremy Panasuk)
 
-Catherine — unlisted 3–5 min is here: [YouTube URL]. Packet: https://jpanasuk-netizen.github.io/for-american-tech/
+Catherine — unlisted 3–5 min is here: https://www.youtube.com/watch?v=2w_2mDG_-o4
+Packet (embed on the home page): https://jpanasuk-netizen.github.io/for-american-tech/#video

@@ -66,6 +66,8 @@
     .applybar { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 30; display: flex; gap: 10px; align-items: center; background: var(--navy); color: var(--paper); padding: 10px 10px 10px 16px; font-family: "Oswald", sans-serif; letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; }
     .applybar .btn { background: var(--gold); color: var(--ink); padding: 8px 14px; }
     .honest { margin-top: 18px; padding: 16px 18px; border-left: 6px solid var(--gold); background: var(--paper); }
+    .video-frame { position: relative; width: 100%; max-width: 960px; aspect-ratio: 16 / 9; background: var(--navy); border: 3px solid var(--navy); overflow: hidden; }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
     @media (max-width: 880px) {
       .hero, .split, .grid2, .stars { grid-template-columns: 1fr; }
       header.nav nav { display: none; }
@@ -78,6 +80,7 @@
     <div class="wrap">
       <a class="brand" href="#top">Panasuk <span>ATF</span></a>
       <nav>
+        <a href="#video">Video</a>
         <a href="#program">The program</a>
         <a href="#signals">Signals</a>
         <a href="#letter">Letter</a>
@@ -98,7 +101,8 @@
         <p class="lede">I never left. Wisconsin. Oils plants. Fabs. Bakeries. A private GPU in the garage. Silicon Valley turned its back on the American worker. Palantir is putting tools back in his hands. I want Foundry and AIP in those hands — certification, then the interview behind it — and I will treat the twelve weeks like a deployment, not a class. Software people use every day. Not a dashboard they clap for once.</p>
         <p class="meta">You asked for builders who will wire a sensor, flash firmware, or ship production code. Who read a messy CSV and think instrument, automate, optimize. Who do not wait for perfect specs. That is not a personality test. That is twenty years of live plants plus two years rebuilding on Docker, WSL, Python, and agents that measure. I will not fake Verilog or ladder logic. I will wire, flash, and learn whatever the plant needs. Hunger, not a fake FPGA resume.</p>
         <div class="hero-actions">
-          <a class="btn" href="playbook.html">IPS playbook</a>
+          <a class="btn" href="#video">Canonical Run</a>
+          <a class="btn ghost" href="playbook.html">IPS playbook</a>
           <a class="btn ghost" href="cover.html">Cover letter</a>
           <a class="btn ghost" href="loyalty.html">Loyalty talk</a>
           <a class="btn ghost" href="#signals">The signals</a>
@@ -110,6 +114,24 @@
       </figure>
     </div>
     <img class="shop" src="assets/shop.jpg" alt="American machine shop" />
+
+    <section id="video">
+      <div class="wrap">
+        <p class="stamp">Video · Canonical Run</p>
+        <h2>Jeremy Panasuk · Canonical Run · American Tech Fellowship</h2>
+        <p class="lede">Canonical Run: one view of the total run. Foundry and AIP around the fab-run job.</p>
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/2w_2mDG_-o4"
+            title="Jeremy Panasuk · Canonical Run · American Tech Fellowship"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="meta" style="margin-top:12px;">Watch it here. Open on YouTube if you want the tab: <a href="https://www.youtube.com/watch?v=2w_2mDG_-o4">youtube.com/watch?v=2w_2mDG_-o4</a></p>
+      </div>
+    </section>
 
     <section id="program">
       <div class="wrap split">
@@ -182,7 +204,8 @@
         </p>
         <article class="letter" id="letter-body">
           <p>Jeremy Panasuk · New Auburn, WI · 715-970-0204 · jpanasuk@gmail.com<br>
-          Packet: https://jpanasuk-netizen.github.io/for-american-tech/</p>
+          Packet: https://jpanasuk-netizen.github.io/for-american-tech/<br>
+          Video: https://www.youtube.com/watch?v=2w_2mDG_-o4</p>
           <p>Hiring team — Palantir American Tech Fellowship · Fall 2026</p>
           <p>You wrote this fellowship for the American worker who never left the floor. I never left.</p>
           <p>I want Foundry and AIP in my hands — certification, then the interview behind it. Not a dashboard class. Software people use every day. Palantir is a software provider, not a data broker. I have spent twenty years inside other people’s plant data and left it theirs. I want the bleeding edge of that stack.</p>
@@ -195,6 +218,7 @@
     <div class="wrap">
       <div>Jeremy Panasuk · New Auburn, WI · 715-970-0204</div>
       <div>
+        <a href="#video">Video</a> ·
         <a href="resume.html">Resume</a> ·
         <a href="cover.html">Cover letter</a> ·
         <a href="playbook.html">Floor playbook</a> ·
