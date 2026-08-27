@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Palantir’s add · Hermes cut</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Serif+4:ital,wght@0,400;1,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; background: #0d1828; color: #f4efe4; font-family: "Source Sans 3", sans-serif; }
+    .slide { display: none; height: 100%; padding: 5vh 7vw 9vh; flex-direction: column; justify-content: center; }
+    .slide.on { display: flex; }
+    .k { font-family: Oswald, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #b8860b; font-size: 13px; margin-bottom: 10px; }
+    h1 { font-family: Oswald, sans-serif; font-size: clamp(36px, 5.6vw, 70px); text-transform: uppercase; letter-spacing: .02em; line-height: .95; margin-bottom: 14px; }
+    .lede { font-family: "Source Serif 4", Georgia, serif; font-style: italic; font-size: clamp(20px, 2.3vw, 28px); max-width: 28ch; margin-bottom: 20px; color: #e6dfd0; }
+    .script { font-size: clamp(17px, 1.9vw, 24px); line-height: 1.35; max-width: 46ch; }
+    .script p { margin: 0 0 12px; }
+    .bar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; padding: 12px 24px; font-family: Oswald, sans-serif; letter-spacing: .14em; text-transform: uppercase; font-size: 11px; color: #8a93a0; }
+    .bar b { color: #b8860b; }
+    button { background: none; border: 0; color: inherit; font: inherit; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <section class="slide on">
+    <div class="k">Arena</div>
+    <h1>We never put a Run on the floor.</h1>
+    <p class="lede">One picture. Then their add.</p>
+  </section>
+  <section class="slide">
+    <div class="k">Constraint</div>
+    <h1>Deck chairs.</h1>
+    <p class="lede">Four sites, four truths. Palantir is the suit.</p>
+  </section>
+  <section class="slide">
+    <div class="k">The video · their value add</div>
+    <h1>That’s your add.</h1>
+    <p class="lede">Canonical Run as a Foundry object. AIP scores live CDC. Agents stop the bad session. 100× the same American worker.</p>
+    <div class="script">
+      <p>Foundry makes Canonical Run a real object. One view of the total run. Every Informatica session judged against it. Point at it Tuesday. Still right Wednesday.</p>
+      <p>AIP scores live change before anyone opens a mapping. Matches or it doesn’t. You know before the meeting. The argument dies. The object stays.</p>
+      <p>Agents judge a live session, stop a bad one, leave Tuesday the notes. The night operator is not shuffling boxes. The suit does the judgment.</p>
+      <p>Move data is table stakes. Make the Run real. Score it live. Stop the bad session before anyone gets in a room. Iron Man. Your layer.</p>
+      <p>I have not shipped Foundry. I did not already build this ontology. Put Canonical Run on the floor. Put me on that deployment.</p>
+    </div>
+  </section>
+  <div class="bar">
+    <span>Hermes cut · their add is the video</span>
+    <span>
+      <button type="button" id="prev">←</button>
+      <b id="pos">1</b> / 3
+      <button type="button" id="next">→</button>
+    </span>
+  </div>
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    let i = 0;
+    function show(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, k) => s.classList.toggle('on', k === i));
+      document.getElementById('pos').textContent = String(i + 1);
+    }
+    document.getElementById('next').onclick = () => show(i + 1);
+    document.getElementById('prev').onclick = () => show(i - 1);
+    document.addEventListener('keydown', (e) => {
+      if (['ArrowRight',' ','PageDown'].includes(e.key)) { e.preventDefault(); show(i + 1); }
+      if (['ArrowLeft','PageUp'].includes(e.key)) { e.preventDefault(); show(i - 1); }
+      if ('123'.includes(e.key)) show(Number(e.key) - 1);
+    });
+  </script>
+</body>
+</html>

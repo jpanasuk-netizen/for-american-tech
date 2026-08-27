@@ -1,0 +1,38 @@
+AMERICAN TECH FELLOWSHIP — camera script · Hermes cut
+Their value add is the video. Not his resume.
+Jeremy Panasuk · 3–5 min · unlisted YouTube → Catherine Rolland
+
+15s who. 40s arena. 25s constraint. ~3 min their add. 20s honest close.
+Traps: no plant tour, no object-list lecture, no hours, no zero downtime, no tok/s, no Lot/Tool, no garage GPU, no 4070, no UNIFIED, no “I already built this ontology,” no “I shipped Foundry.”
+
+--- TELEPROMPTER ---
+
+I’m Jeremy Panasuk. New Auburn, Wisconsin.
+
+Catherine, I’m not here to walk a fab. I’m here because Palantir is the suit around a job I already lived.
+
+I connected Micron fabs. Change data coming off SQL Server. Clones. Bulk loads into Teradata and Hadoop. They kept extending that pipe. We moved a lot of tables. We never put a Run on the floor.
+
+That’s the arena.
+
+The constraint was not more hardware. It was more journals. More sessions. Four sites, four truths. Tuesday’s extract and Wednesday’s extract both looked right, and we sat in a room rearranging mappings to pick a winner. Deck chairs.
+
+That’s the job. Palantir doesn’t ask me to do that job harder. You put a suit on it.
+
+Foundry makes Canonical Run a real object. One view of the total run. Every Informatica session judged against it. Not a dashboard after the fact. Not another mapping. The thing an operator can point at on Tuesday and still be right on Wednesday.
+
+AIP scores live change against that object before anyone opens a mapping. The CDC either matches Canonical Run or it doesn’t. You know before the meeting. The argument dies. The object stays.
+
+Then you unleash the worker. Agents that judge a live session, stop a bad one, and leave Tuesday the notes. The night operator is not shuffling boxes at 2 a.m. The same American worker. The suit does the judgment. That’s 100 times the person, not a smarter mapping.
+
+Move data is table stakes. I already know how to move data. What Informatica could not do, you do. Make the Run real. Score it live. Stop the bad session before anyone gets in a room. That is the Iron Man suit. Foundry and AIP around the fab-run job. Your layer.
+
+I have not shipped Foundry. I did not already build this ontology. I’m asking you to put Canonical Run on the floor, and to put me on that deployment.
+
+That’s your add. That’s why I’m here.
+
+--- CATHERINE EMAIL (draft only — send after the video exists) ---
+To: crolland@palantir.com
+Subject: American Tech Fellowship — video (Jeremy Panasuk)
+
+Catherine — unlisted 3–5 min is here: [YouTube URL]. Packet: https://jpanasuk-netizen.github.io/for-american-tech/
