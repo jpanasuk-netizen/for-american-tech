@@ -11,9 +11,30 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-variant-ligatures: none; font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "calt" 0; }
     html, body { background: #fff; }
     * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    @media screen {
+      html, body { width: 100%; min-height: 0; background: #e6dfd0; }
+      body { padding: 28px 16px 88px; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+      .sheet {
+        width: min(8.5in, 100%);
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+        flex-shrink: 0;
+        margin: 0;
+        box-shadow: 0 20px 60px rgba(21,32,51,0.18);
+      }
+      .navybar { height: 10px; }
+      .goldbar { height: 4px; }
+      .pad { padding: 28px 36px 32px; }
+      .foot { position: relative; left: auto; right: auto; bottom: auto; margin-top: 12px; }
+    }
+    @media print {
+      html, body { background: #fff; padding: 0; display: block; }
+      .sheet { width: 8.5in; height: 11in; overflow: hidden; margin: 0; box-shadow: none; }
+    }
     .sheet { width: 8.5in; height: 11in; overflow: hidden; page-break-after: always; position: relative; background: #e6dfd0; color: #152033; font-family: "Source Sans 3", Arial, sans-serif; }
-    .navybar { height: 8px; background: #1e3a5f; }
-    .goldbar { height: 3px; background: #b8860b; }
+    .navybar { height: 10px; background: #1e3a5f; }
+    .goldbar { height: 4px; background: #b8860b; }
     .pad { padding: 0.18in 0.36in 0.26in; }
     .stamp { font-family: "Oswald", sans-serif; font-size: 7pt; letter-spacing: 0.16em; text-transform: uppercase; color: #b8860b; }
     h1 { font-family: "Oswald", sans-serif; font-size: 24pt; text-transform: uppercase; letter-spacing: 0.02em; line-height: 0.95; margin: 2px 0 3px; }
@@ -93,7 +114,7 @@
         <div>
           <div class="stamp">American Tech Fellowship · Palantir × Ontologize · Fall 2026 · Remote · Unpaid</div>
           <h1>Jeremy Panasuk</h1>
-          <p class="tag">You built this fellowship for the American worker who never left the floor. I never left. Now I want Foundry and AIP in my hands.</p>
+          <p class="tag">Informatica moved the data. Palantir puts Canonical Run on the floor. That’s your add — the Iron Man suit around the fab-run job.</p>
           <div class="contact">
             New Auburn, WI · U.S. person · 715-970-0204 · jpanasuk@gmail.com<br />
             Packet: jpanasuk-netizen.github.io/for-american-tech · github.com/jpanasuk-netizen<br />
@@ -107,7 +128,7 @@
         <div class="m"><b>19/20</b><span>Crisis recovered</span></div>
         <div class="m"><b>WSL</b><span>Docker · CUDA · Git</span></div>
         <div class="m"><b>8h→1h</b><span>Dawn Foods plant</span></div>
-        <div class="m"><b>~27×</b><span>Measured local decode</span></div>
+        <div class="m"><b>Fabs</b><span>Canonical Run missing</span></div>
         <div class="m"><b>CFO</b><span>Horizon Milling 2005</span></div>
       </div>
       <p class="trusted"><b>Trusted on the floor</b> &nbsp; Cargill · Horizon Milling · Dawn Foods · Micron · Mercedes · Toyota · PepsiCo · Ace · Kohl’s · Navy Federal · Smith &amp; Nephew · BNY · JPMorgan</p>
@@ -148,15 +169,15 @@
       <h2>01 — Your signals · my proof</h2>
       <div class="grid2">
         <div class="card"><h3>Factory floor · 4+ years asked · 20 delivered</h3><p>Cargill oils plants: BA overseeing plant ERP implementation — live operations, not a sandbox. Horizon Milling: production visibility on a time dimension so plants and accounting saw the same facts — CFO Award 2005 (six awarded that year). Dawn Foods PowerExchange CDC on AS/400 remote journals: warehouse load 8h → 1h, Type 2 DW, featured on informatica.com. Micron: connected fabs with PWX CDC off SQL Server, Fast Clone, BDE into Teradata/Hadoop. Mercedes +200% on the longest workflows; playbook stayed with the team. Toyota Engine Management go-live, all consultants 5/5.</p></div>
-        <div class="card"><h3>Garage shop · fireworks · then a GPU</h3><p>Secret Key Class B shooter, 1996–2004. Fireworks Forever inventory manager and sales lead — $800K+ seasonal stock, 6 consecutive years of profit growth, 100-hour peak weeks. Load, wire, shoot, tear down. No schema, no second take. Then I put a private RTX 4070 in the garage and measured it. You asked for garage-shop builders who automate a physical process. I already lived the shop. Then I instrumented the stack.</p></div>
-        <div class="card"><h3>Python · SQL · Linux · Git · Docker · WSL</h3><p>Daily. Tabby Tavern on WSL2 + CUDA: TabbyAPI EXL3, Ollama, Open WebUI, SillyTavern, SearXNG, flash-attention, q8 KV cache. local_grid_suite: discovery, decode/prefill benches, GPU routing, SQLite, CLI + PDF. Headline 1.39 → 37.47 tok/s after routing (~27×). Warm stream ~76 tok/s. Dockroot-MCP. OpenClaw WhatsApp agents, 10+ skills. TypeScript for this packet. I taught myself the new stack the same way I learned the plants — by shipping.</p></div>
+        <div class="card"><h3>Shop floor · fireworks</h3><p>Secret Key Class B shooter, 1996–2004. Fireworks Forever inventory manager and sales lead — $800K+ seasonal stock, 6 consecutive years of profit growth, 100-hour peak weeks. Load, wire, shoot, tear down. No schema, no second take. You asked for builders who automate a physical process. I already lived the shop.</p></div>
+        <div class="card"><h3>Python · SQL · Linux · Git · Docker · WSL</h3><p>Daily. Production Python and SQL. Linux shell, Git, Docker, WSL. Agents that log a number before they claim it. TypeScript for this packet. I taught myself the new stack the same way I learned the plants — by shipping.</p></div>
         <div class="card"><h3>Messy CSV · unofficial specs · iterate</h3><p>AS/400 journals the MES does not see. SOAP that never matched the WSDL. Unofficial definition of a good part. Demantra demand planning — won Quarterly Award for Excellence, Oct 2006, separate from the oils ERP. Milwaukee insurer: platform dark three months; I closed it in two days on one buried IBM DB2 driver. 19 of 20 crisis accounts recovered. Prototype, test, learn on the fly. Perfect specs never arrived. That is the fellowship muscle.</p></div>
       </div>
 
       <h2>02 — Independent lab · Aug 2024 – Present · the AIP-era stack I already run</h2>
       <div class="grid2">
-        <div class="card"><h3><span class="n">4070</span> · Tabby Tavern Stack</h3><p>Containerized private inference on RTX 4070 / WSL2: Docker Compose, CUDA, GPU passthrough. Bring-up, auth, and security notes treated as ops, not a demo folder. huggingface.co/jpanasuk/tabby-tavern-stack</p></div>
-        <div class="card"><h3><span class="n">27×</span> · Local Grid Suite</h3><p>Operator telemetry: model discovery, decode/prefill, GPU routing, SQLite logs, CLI + PDF reports. Constant test loops — not one lucky run. github.com/jpanasuk-netizen/local_grid_suite</p></div>
+        <div class="card"><h3><span class="n">Ops</span> · Tabby Tavern Stack</h3><p>Containerized private inference on WSL2: Docker Compose, CUDA, GPU passthrough. Bring-up, auth, and security notes treated as ops, not a demo folder. huggingface.co/jpanasuk/tabby-tavern-stack</p></div>
+        <div class="card"><h3><span class="n">Log</span> · Local Grid Suite</h3><p>Operator telemetry: model discovery, benches, SQLite logs, CLI + PDF reports. Constant test loops — not one lucky run. github.com/jpanasuk-netizen/local_grid_suite</p></div>
         <div class="card"><h3><span class="n">MCP</span> · Dockroot-MCP</h3><p>Bounded agent visibility into Docker services and network wiring — not host-root. Same production discipline as Fortune-100 Grid/HA: measure the boundary, then hand the agent the boundary.</p></div>
         <div class="card"><h3><span class="n">Agents</span> · OpenClaw + pipeline</h3><p>Systems → architect → validator over local Ollama: structured output, repair retries, collision checks. Production WhatsApp agents. Multi-provider routing with cloud failover. Hermes Agent on the same box.</p></div>
       </div>
