@@ -61,17 +61,14 @@
     .proof { padding: 0 16px 16px; color: #334155; }
     .letter { background: var(--paper); border: 3px solid var(--navy); padding: 28px; max-width: 72ch; }
     .letter p { margin: 0 0 12px; }
-    footer { border-top: 3px solid var(--navy); padding: 22px 0 80px; color: var(--steel); }
+    footer { border-top: 3px solid var(--navy); padding: 22px 0 40px; color: var(--steel); }
     footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    .applybar { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 30; display: flex; gap: 10px; align-items: center; background: var(--navy); color: var(--paper); padding: 10px 10px 10px 16px; font-family: "Oswald", sans-serif; letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; }
-    .applybar .btn { background: var(--gold); color: var(--ink); padding: 8px 14px; }
     .honest { margin-top: 18px; padding: 16px 18px; border-left: 6px solid var(--gold); background: var(--paper); }
     .video-frame { position: relative; width: 100%; max-width: 960px; aspect-ratio: 16 / 9; background: var(--navy); border: 3px solid var(--navy); overflow: hidden; }
     .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
     @media (max-width: 880px) {
       .hero, .split, .grid2, .stars { grid-template-columns: 1fr; }
       header.nav nav { display: none; }
-      .applybar { width: calc(100% - 24px); justify-content: space-between; }
     }
   </style>
 </head>
@@ -229,11 +226,6 @@
       </div>
     </div>
   </footer>
-  <div class="applybar">
-    <span>American Tech Fellowship</span>
-    <a class="btn" href="playbook.html">Playbook</a>
-    <a class="btn" href="https://jobs.lever.co/palantir/0ccbe620-a3ef-41d1-a5c4-68e56b3c91d0/apply" target="_blank" rel="noopener">Apply on Lever</a>
-  </div>
   <script>
     document.getElementById("copy").addEventListener("click", async (e) => {
       const btn = e.currentTarget;
